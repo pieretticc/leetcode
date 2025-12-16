@@ -25,7 +25,7 @@ int main() {
     int testCases[] = {222, 70, 1111111, 155551, 0, 457343, 8};
     int size = sizeof(testCases) / sizeof(int);
     for (int i = 0; i < size; i++) {
-        cout << s.isPalindrome(testCases[i]) << " \n";
+        cout << (s.isPalindrome(testCases[i]) ? "True" : "False") << " \n";
     }
 
 
