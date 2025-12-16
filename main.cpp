@@ -8,20 +8,25 @@ int main() {
 
     vector<int> nums = {2, 7, 11, 15};
 
-    for (int element : nums) {
-        cout << element << " ";
-    }
-    cout << endl;
+    // for (int element : nums) {
+    //     cout << element << " ";
+    // }
+    // cout << endl;
 
-// ----------------------------------------------------------
+    // ----------------------------------------------------------
 
     Solution s;
     vector<int> myReturnedVector = s.twoSum(nums, 9);
-    for (int element : myReturnedVector) {
-        cout << element << " ";
+    // for (int element : myReturnedVector) {
+    //     cout << element << " ";
+    // }
+    // cout << endl;
+    // ----------------------------------------------------------
+    int testCases[] = {222, 70, 1111111, 155551, 0, 457343, 8};
+    int size = sizeof(testCases) / sizeof(int);
+    for (int i = 0; i < size; i++) {
+        cout << s.isPalindrome(testCases[i]) << " \n";
     }
-    cout << endl;
-
 
 
     return 0;
