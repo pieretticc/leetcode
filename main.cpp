@@ -22,12 +22,16 @@ int main() {
     // }
     // cout << endl;
     // ----------------------------------------------------------
-    int testCases[] = {222, 70, 1111111, 155551, 0, 457343, 8};
-    int size = sizeof(testCases) / sizeof(int);
-    for (int i = 0; i < size; i++) {
-        cout << (s.isPalindrome(testCases[i]) ? "True" : "False") << " \n";
-    }
-
+    // int testCases[] = {222, 70, 1111111, 155551, 0, 457343, 8};
+    // int size = sizeof(testCases) / sizeof(int);
+    // for (int i = 0; i < size; i++) {
+    //     cout << (s.isPalindrome(testCases[i]) ? "True" : "False") << " \n";
+    // }
+    // ----------------------------------------------------------
+    vector<int> testVector = {1,3,5,6};
+    cout << s.searchInsert(testVector, 5) << endl;
+    cout << s.searchInsert(testVector, 2) << endl;
+    cout << s.searchInsert(testVector, 7) << endl;
 
     return 0;
 }
