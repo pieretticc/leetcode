@@ -41,6 +41,7 @@ int Solution::searchInsert(vector<int>& nums, int target) {
         if (nums.empty()) {
             return 0;
         }
+
         while (left <= right) {
             int mid = left + (right - left) / 2;
             cout << left << " " << mid << " " << right << "\n";
