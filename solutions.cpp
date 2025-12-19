@@ -57,3 +57,31 @@ int Solution::searchInsert(vector<int>& nums, int target) {
         }
         return left;
     }
+
+int Solution::maxArea(vector<int>& height) {
+        if (height.empty()){
+            return 0;
+        }
+        int first = 0;
+        int last = height.size() - 1;
+        int tempVolume = 0;
+        int maxVolumeSoFar = 0;
+        //       cout << "First: " << first << " Last: " << last << " \n";
+        //       printf("first: %d last: %d\n", height[first], height[last]);
+        while (first < last){
+            tempVolume = min(height[first], height[last]) * (last - first );
+            //            cout << "Temp Volume: " << tempVolume << " \n";
+            if (tempVolume > maxVolumeSoFar){
+                maxVolumeSoFar = tempVolume;
+            }
+            if (height[first] > height[last]){
+                last--;
+            } else if (height[first] < height[last]){
+                first++;
+            } else {
+                first++;
+                last--;
+            }
+        }
+        return maxVolumeSoFar;
+    }

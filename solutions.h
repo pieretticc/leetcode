@@ -11,6 +11,7 @@ class Solution {
     vector<int> twoSum(vector<int>& nums, int target);
     static bool isPalindrome(int x);
     int searchInsert(vector<int>& nums, int target);
+    int maxArea(vector<int> &height);
 };
 
 
